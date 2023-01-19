@@ -43,6 +43,31 @@ namespace Linked_List
             Console.WriteLine("{0} inserted into the Linked List", node.data);
 
         }
+
+        public void Insert(int position, int data)
+        {
+            Node node = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Envalid Position");
+            }
+            else if(position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
+                node.next = temp.next;
+                temp.next = node;
+            }
+        }
         internal void Display()
         {
             Node temp = this.head;
