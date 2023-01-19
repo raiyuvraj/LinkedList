@@ -10,7 +10,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //Console.WriteLine("Hello, World!");
+        Console.WriteLine("Welcome to Linked List Programs!");
         LinkedList list = new LinkedList();
         list.Add(56);
         list.Add(30);
