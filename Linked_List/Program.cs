@@ -15,8 +15,8 @@ internal class Program
         list.Add(56);
         list.Add(30);
         list.Add(70);
-        list.FirstDelete();
-
+        //list.FirstDelete();
+        list.LastDelete();
         list.Display();
     }
 }

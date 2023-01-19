@@ -95,6 +95,17 @@ namespace Linked_List
                 node = null;
             }
         }
+        public void LastDelete()
+        {
+            Node node = head;
+            Node lastnode = node.next;
+            if (head != null)
+            {
+                node = node.next;
+                node.next = null;
+                lastnode = null;
+            }
+        }
     }
 
 }
