@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -68,6 +69,7 @@ namespace Linked_List
                 temp.next = node;
             }
         }
+
         internal void Display()
         {
             Node temp = this.head;
@@ -82,6 +84,16 @@ namespace Linked_List
                 temp = temp.next;
             }
 
+        }
+        public void FirstDelete()
+        {
+            Node node = head;
+            if (head != null)
+            {
+                node = head;
+                head = head.next;
+                node = null;
+            }
         }
     }
 

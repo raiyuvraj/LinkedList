@@ -13,10 +13,10 @@ internal class Program
         Console.WriteLine("Welcome to Linked List Programs!");
         LinkedList list = new LinkedList();
         list.Add(56);
-        //list.Add(30);
+        list.Add(30);
         list.Add(70);
+        list.FirstDelete();
 
-        list.Insert(2, 30);
         list.Display();
     }
 }
