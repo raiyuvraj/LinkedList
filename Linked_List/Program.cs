@@ -12,9 +12,15 @@ internal class Program
     {
         Console.WriteLine("Welcome to Linked List Programs!");
         LinkedList list = new LinkedList();
-        list.Add(56);
-        list.Add(30);
-        list.Add(70);
+        //list.Add(56);
+        //list.Add(30);
+        //list.Add(70)
+        list.AddAtEnd(70);
+        list.AddAtEnd(30);
+        list.AddAtEnd(56);
+
+
+
 
         list.Display();
     }
